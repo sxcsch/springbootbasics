@@ -1,6 +1,8 @@
 package com.mecool.controller;
 
+import com.mecool.service.TestService;
 import org.apache.poi.hssf.usermodel.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -20,6 +22,9 @@ import java.util.Map;
  */
 @RestController
 public class TestController extends BaseController{
+
+    @Autowired
+    TestService testService;
 
     @GetMapping("/helloworld")
     public String helloworld() {
@@ -72,4 +77,5 @@ public class TestController extends BaseController{
         //out.close();
         return map;
     }
+
 }

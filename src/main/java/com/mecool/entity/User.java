@@ -1,11 +1,19 @@
 package com.mecool.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
  * Created by Administrator on 2018/5/8.
  */
+@Entity
+@Table
 public class User {
+    @Id
+    @GeneratedValue
     private Integer id;
 
     private String username;

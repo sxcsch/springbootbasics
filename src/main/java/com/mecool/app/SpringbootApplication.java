@@ -19,7 +19,7 @@ import java.util.EnumSet;
  */
 @SpringBootApplication
 @EnableCaching
-@ComponentScan(basePackages = {"com.mecool.controller"})
+@ComponentScan(basePackages = {"com.mecool"})
 public class SpringbootApplication extends SpringBootServletInitializer {
 
     @Override

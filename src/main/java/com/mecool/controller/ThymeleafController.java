@@ -17,4 +17,7 @@ public class ThymeleafController {
         map.put("msg", "Hello Thymeleaf");
         return "hello";
     }
+
+
+
 }

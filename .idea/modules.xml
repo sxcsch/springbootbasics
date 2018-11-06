@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mecool-common/mecoolcommon.iml" filepath="$PROJECT_DIR$/mecool-common/mecoolcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mecool-dao/mecooldao.iml" filepath="$PROJECT_DIR$/mecool-dao/mecooldao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mecool-entity/mecoolentity.iml" filepath="$PROJECT_DIR$/mecool-entity/mecoolentity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mecool-eureka/mecooleureka.iml" filepath="$PROJECT_DIR$/mecool-eureka/mecooleureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mecool-gateway/mecoolgateway.iml" filepath="$PROJECT_DIR$/mecool-gateway/mecoolgateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mecool-service/mecoolservice.iml" filepath="$PROJECT_DIR$/mecool-service/mecoolservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot.iml" filepath="$PROJECT_DIR$/springboot.iml" />
     </modules>
   </component>

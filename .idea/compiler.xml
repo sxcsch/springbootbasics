@@ -6,10 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot" />
+        <module name="mecoolcommon" />
+        <module name="mecooldao" />
+        <module name="mecoolentity" />
+        <module name="mecooleureka" />
+        <module name="mecoolgateway" />
+        <module name="mecoolservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mecoolcommon" target="1.8" />
+      <module name="mecooldao" target="1.8" />
+      <module name="mecoolentity" target="1.8" />
+      <module name="mecooleureka" target="1.8" />
+      <module name="mecoolgateway" target="1.8" />
+      <module name="mecoolservice" target="1.8" />
       <module name="springboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>

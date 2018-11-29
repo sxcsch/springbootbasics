@@ -1,0 +1,13 @@
+#tomcat端口
+server:
+  port: 8011
+  context-path: /eddy
+spring:
+  application:
+    name: yw
+eureka:
+  instance:
+    hostname: localhost
+  client: #not a client,don't register with yourself
+    registerWithEureka: true
+    fetchRegistry: false

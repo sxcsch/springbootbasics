@@ -1,0 +1,61 @@
+#server:
+#  port: 8008
+#  application:
+#    name: zcloud-gateway
+server:
+  port: 5001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+feign:
+  hystrix:
+    enabled: true
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: trace
+    org.springframework.http.server.reactive: debug
+    org.springframework.web.reactive: debug
+    reactor.ipc.netty: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      default-filters:
+        AddResponseHeader: X-Response-Default-Foo, Default-Bar
+        AddRequestHeader: fangxiaobai,its sound good
+        PrefixPath: /httpbin
+#      routes:
+#        id: code
+#        # 除了ws,还有lb,不知道什么意思
+#        uri: http://localhost:8080/
+#        predicates:
+#          Path: /code/**
+#        filters:
+#          AddResponseHeader: X-Response-Foo, Bar
+#          SetPath: /web
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: false
+zuul:
+  routes:
+    code :
+      path: /code
+      url: http://localhost:8080/

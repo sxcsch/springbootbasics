@@ -12,6 +12,8 @@
         <module name="mecooleureka" />
         <module name="mecoolgateway" />
         <module name="mecoolservice" />
+        <module name="mecoolyw2web" />
+        <module name="mecoolywweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +23,8 @@
       <module name="mecooleureka" target="1.8" />
       <module name="mecoolgateway" target="1.8" />
       <module name="mecoolservice" target="1.8" />
+      <module name="mecoolyw2web" target="1.8" />
+      <module name="mecoolywweb" target="1.8" />
       <module name="springboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>

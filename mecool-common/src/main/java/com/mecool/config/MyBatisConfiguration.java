@@ -1,6 +1,5 @@
 package com.mecool.config;
 
-import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
@@ -11,6 +10,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+import javax.sql.DataSource;
 import java.io.IOException;
 
 /**
@@ -39,7 +39,7 @@ public class MyBatisConfiguration {
         }
 
         // 设置别名包
-        sqlSessionFactoryBean.setTypeAliasesPackage("com.mecool.entity");
+        //sqlSessionFactoryBean.setTypeAliasesPackage("com.mecool.entity");
 
         return sqlSessionFactoryBean;
     }
